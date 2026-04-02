@@ -1,0 +1,8 @@
+-- Write your query below
+SELECT Employee_id,
+CASE
+WHEN employee_id%2=1 AND NAME NOT LIKE 'M%' THEN SALARY 
+ELSE 0
+END AS bonus 
+FROM EMPLOYEES
+ORDER BY EMPLOYEE_ID;
