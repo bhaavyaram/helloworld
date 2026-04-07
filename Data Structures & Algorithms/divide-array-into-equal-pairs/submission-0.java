@@ -1,0 +1,14 @@
+class Solution {
+    public boolean divideArray(int[] nums) {
+        Arrays.sort(nums);
+        int n = nums.length / 2;
+        int i=0;
+        
+        while(i<nums.length)
+        {
+            if(nums[i]!=nums[i+1])return false;
+            i+=2;
+        }
+        return true;
+    }
+}
